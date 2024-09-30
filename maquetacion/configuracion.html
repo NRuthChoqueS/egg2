@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuración</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Configuración de Incubadoras</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="control-incubadoras.html">Control de Incubadoras</a></li>
+                <li><a href="monitoreo.html">Monitoreo</a></li>
+                <li><a href="soporte.html">Soporte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="ajustes-incubadora">
+            <h2>Ajustes de la Incubadora</h2>
+            <label for="perfil">Perfil de Incubación:</label>
+            <select id="perfil">
+                <option value="pollo">Pollo</option>
+                <option value="pato">Pato</option>
+                <option value="codorniz">Codorniz</option>
+            </select>
+
+            <label>Temperatura Manual:</label>
+            <input type="number" min="35" max="40" value="37">
+        </section>
+
+        <section class="notificaciones">
+            <h2>Preferencias de Notificaciones</h2>
+            <label>Email:</label>
+            <input type="email">
+            
+            <label>Recibir notificaciones por SMS:</label>
+            <input type="checkbox">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Granja Incubadora</p>
+    </footer>
+</body>
+</html>

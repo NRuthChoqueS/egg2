@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Incubadoras</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Control de Incubadoras</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="monitoreo.html">Monitoreo</a></li>
+                <li><a href="configuracion.html">Configuración</a></li>
+                <li><a href="soporte.html">Soporte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="visor-condiciones">
+            <h2>Condiciones Actuales</h2>
+            <p>Temperatura: 37°C</p>
+            <p>Humedad: 60%</p>
+            <p>Ventilación: Activa</p>
+            <p>Tiempo Restante: 14 días</p>
+        </section>
+        
+        <section class="controles-ajustables">
+            <h3>Ajustes</h3>
+            <label>Temperatura Deseada:</label>
+            <input type="range" min="35" max="40" value="37">
+            
+            <label>Humedad Deseada:</label>
+            <input type="range" min="50" max="80" value="60">
+            
+            <button>Encender/Apagar Ventilación</button>
+        </section>
+
+        <section class="historial-condiciones">
+            <h3>Historial de Condiciones</h3>
+            <img src="img/historial.jpg" alt="Historial de Temperatura y Humedad">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Granja Incubadora</p>
+    </footer>
+</body>
+</html>
